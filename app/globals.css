@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background: #020617;
+  color: #ffffff;
+}
+
+::selection {
+  background: #22d3ee;
+  color: #020617;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#06b6d4, #8b5cf6);
+  border-radius: 50px;
+}
+
+.section-padding {
+  padding: 90px 20px;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LIGHT MODE */
+html.light body,
+html.light main {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.light header,
+html.light footer {
+  background: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .glass-card {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 0 35px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: #475569 !important;
+}
+
+html.light .bg-\[\#020617\] {
+  background: #f8fafc !important;
+}
+
+html.light .bg-white\/5 {
+  background: rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .bg-white\/10 {
+  background: rgba(15, 23, 42, 0.06) !important;
+}
+
+html.light .border-white\/10,
+html.light .border-white\/15 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
 }
