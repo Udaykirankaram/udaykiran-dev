@@ -21,18 +21,18 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <p className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-cyan-400">
-            Hello, I am
-          </p>
+  Hello, I’m
+</p>
 
-          <h1 className="mb-5 text-5xl font-extrabold leading-tight md:text-7xl">
-            Uday <br />
-            <span className="gradient-text">MERN Stack Developer</span>
-          </h1>
+<h1 className="mb-5 text-5xl font-extrabold leading-tight md:text-7xl">
+  Uday Kiran <br />
+  <span className="gradient-text">MERN Stack Developer in Hyderabad</span>
+</h1>
 
-          <p className="mb-8 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
-            I build modern, responsive, and scalable web applications using
-            MongoDB, Express.js, React, Node.js, Next.js, and Tailwind CSS.
-          </p>
+<p className="mb-8 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
+  I build modern, responsive, and scalable web applications using React, Next.js,
+  Node.js, Express.js, MongoDB, and Tailwind CSS.
+</p>
 
           <div className="mb-8 flex flex-wrap gap-4">
             <Link
