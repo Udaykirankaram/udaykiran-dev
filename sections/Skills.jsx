@@ -10,7 +10,10 @@ export default function Skills() {
       <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-blue-500/10 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl">
-        <SectionHeading subtitle="My Skills" title="Technologies I Use" />
+        <SectionHeading
+          subtitle="My Skills"
+          title="Technologies I Use as a MERN Stack Developer"
+        />
 
         <div className="grid gap-8 md:grid-cols-2">
           {skills.map((group, groupIndex) => (
@@ -39,7 +42,6 @@ export default function Skills() {
                       className="group rounded-2xl border border-white/10 bg-white/5 p-5 text-center transition hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10"
                     >
                       <Icon className="mx-auto mb-3 text-4xl text-cyan-400 transition group-hover:scale-110" />
-
                       <p className="text-sm font-medium text-slate-300">
                         {skill.name}
                       </p>

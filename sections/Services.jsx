@@ -13,7 +13,10 @@ export default function Services() {
       <div className="absolute left-0 top-10 h-72 w-72 rounded-full bg-cyan-500/10 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl">
-        <SectionHeading subtitle="Services" title="What I Can Do" />
+        <SectionHeading
+          subtitle="Services"
+          title="Services I Offer as a MERN Stack Developer"
+        />
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => {

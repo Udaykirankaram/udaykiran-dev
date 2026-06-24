@@ -23,7 +23,7 @@ export default function Projects() {
       <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-purple-500/10 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl">
-        <SectionHeading subtitle="Projects" title="Featured Work" />
+        <SectionHeading subtitle="Projects" title="Featured MERN Stack Projects" />
 
         <div className="mb-10 flex flex-wrap justify-center gap-3">
           {filters.map((filter) => (
@@ -57,7 +57,7 @@ export default function Projects() {
               <div className="relative h-56 overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} project screenshot`}
                   fill
                   className="object-cover transition duration-500 group-hover:scale-110"
                 />
@@ -86,6 +86,8 @@ export default function Projects() {
                 <div className="flex flex-wrap gap-3">
                   <a
                     href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-black transition hover:bg-cyan-300"
                   >
                     <FiExternalLink />
@@ -94,6 +96,8 @@ export default function Projects() {
 
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
                   >
                     <FaGithub />
