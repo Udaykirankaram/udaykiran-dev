@@ -50,7 +50,7 @@ export default function Contact() {
                   href="tel:+917660932566"
                   className="text-slate-300 transition hover:text-cyan-400"
                 >
-                  +91 7660932566
+                  +917660932566
                 </a>
               </div>
 
