@@ -12,7 +12,6 @@ export const metadata = {
     "MongoDB",
     "Portfolio",
   ],
-  // Google Search Console verification
   verification: {
     google: "6Gl42E_q4hzb7eWfDYFsH4mOvN24zNNN0gdRGbM1fD8",
   },
