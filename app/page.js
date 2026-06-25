@@ -25,8 +25,6 @@ export default function Home() {
       <Experience />
       <Services />
       <Testimonials />
-      <Contact />
-
       <Footer />
       <BackToTop />
     </main>

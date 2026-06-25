@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiDownload, FiSend } from "react-icons/fi";
-import SectionHeading from "@/components/SectionHeading";
 
 export default function Hero() {
   return (
@@ -16,28 +15,22 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 h-72 w-72 rounded-full bg-purple-500/20 blur-[120px]" />
 
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-        {/* LEFT CONTENT */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <SectionHeading
-            subtitle="About Me"
-            title="MERN Stack Developer in Hyderabad"
-          />
-
-          <h3 className="mb-5 text-2xl font-bold text-white">
-            I build modern web applications with clean code and great user experience.
-          </h3>
-
-          <p className="mb-5 leading-8 text-slate-300">
-            I am Uday Kiran, a MERN Stack Developer from Hyderabad, focused on building
-            responsive websites, full-stack applications, admin dashboards, and REST APIs.
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-cyan-400">
+            Hello, I’m
           </p>
 
-          <p className="mb-8 leading-8 text-slate-300">
-            My goal is to create fast, user-friendly, and scalable web applications using
+          <h1 className="mb-5 text-5xl font-extrabold leading-tight md:text-7xl">
+            Uday Kiran <br />
+            <span className="gradient-text">MERN Stack Developer in Hyderabad</span>
+          </h1>
+
+          <p className="mb-8 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
+            I build modern, responsive, and scalable web applications using
             React, Next.js, Node.js, Express.js, MongoDB, and Tailwind CSS.
           </p>
 
@@ -60,21 +53,38 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-4 text-xl">
-            <Link href="#" className="transition hover:text-cyan-400">
+            <Link
+              href="https://github.com/your-github"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-cyan-400"
+              aria-label="GitHub profile"
+            >
               <FaGithub />
             </Link>
 
-            <Link href="#" className="transition hover:text-cyan-400">
+            <Link
+              href="https://linkedin.com/in/your-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-cyan-400"
+              aria-label="LinkedIn profile"
+            >
               <FaLinkedin />
             </Link>
 
-            <Link href="#" className="transition hover:text-cyan-400">
+            <Link
+              href="https://x.com/your-twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-cyan-400"
+              aria-label="X profile"
+            >
               <FaTwitter />
             </Link>
           </div>
         </motion.div>
 
-        {/* RIGHT CONTENT */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
