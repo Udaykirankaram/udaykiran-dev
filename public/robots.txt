@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://udaykiran-dev-lyart.vercel.app
-
-# Sitemaps
-Sitemap: https://udaykiran-dev-lyart.vercel.app/sitemap.xml
